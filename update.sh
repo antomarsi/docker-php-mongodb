@@ -4,7 +4,6 @@ set -eo pipefail
 
 declare -a versions=(
   7-apache
-  7
 )
 
 for version in "${versions[@]}"
