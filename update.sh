@@ -3,6 +3,7 @@
 set -eo pipefail
 
 declare -a versions=(
+  5-apache
   7-apache
 )
 
