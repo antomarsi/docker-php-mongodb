@@ -8,6 +8,3 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
 
 RUN pecl install mongodb \
     && docker-php-ext-enable mongodb
-
-RUN mkdir -p $PHP_INI_DIR/conf.d \
-    && echo "extension=mongodb.so" > $PHP_INI_DIR/conf.d/mongodb.ini
