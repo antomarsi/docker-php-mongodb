@@ -6,5 +6,5 @@ FROM php:5-apache
 RUN apt-get update && apt-get install --yes --no-install-recommends \
     libssl-dev
 
-RUN pecl install mongo \
-    && docker-php-ext-enable mongo
+RUN pecl install mongodb \
+    && docker-php-ext-enable mongodb
